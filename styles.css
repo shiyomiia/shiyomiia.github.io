@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:powderblue;
+    background: #cce6ff no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -31,9 +32,8 @@ nav ul li a {
     height: auto;
 }
 
-/* Update the titles to clear purple */
 h2, h3 {
-    color: #9b59b6; /* Clear purple */
+    color: #9b59b6;
 }
 
 .services {
