@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 h2, h3 {
-    color: #df80ff;
+    color: #df80ff !important;
     text-align: center;
     font-family: 'Lora', serif;
     margin-bottom: 20px;
