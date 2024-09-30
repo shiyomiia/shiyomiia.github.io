@@ -84,13 +84,15 @@ body, h1 {
 }
 
 /* Smooth scrolling animation for Our Services */
+/* Smooth scrolling animation for Our Services */
 .animated-title {
     color: #0000ff; /* Set the desired color for the animated title */
     font-size: 80px;
     text-align: center;
-    overflow: hidden; /* Hide overflow to keep text within bounds */
     white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow to keep text within bounds */
     animation: scroll-title 20s linear infinite; /* Continuous scroll */
+    display: inline-block; /* Make it an inline-block for proper positioning */
 }
 
 /* Keyframes for scrolling animation */
