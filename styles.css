@@ -66,12 +66,11 @@ nav ul li a {
 /* Smooth scrolling animation for Our Services */
 .animated-title {
     color: #0000ff;
-    font-size: 28px;
+    font-size: 60px;
     text-align: center;
-    white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    animation: scroll-title 10s linear infinite;
+    animation: scroll-title 20s linear infinite;
 }
 
 /* Keyframes for scrolling animation */
