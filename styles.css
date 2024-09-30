@@ -8,8 +8,8 @@ body {
 
 /* Header */
 .logo-img {
-    width: 80px; /* Adjusted size */
-    height: auto;
+    width: 100px; /* Adjusted size */
+    height: 100px;
     display: block;
     margin: 0 auto;
 }
@@ -17,7 +17,7 @@ body {
 /* Welcome text */
 .welcome-text {
     font-size: 30px;
-    color: black;
+    color: #0000ff;
     position: relative;
     text-align: center;
     margin: 20px 0;
