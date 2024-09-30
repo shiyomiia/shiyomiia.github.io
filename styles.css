@@ -1,20 +1,21 @@
-
-
 /* General styles */
 body {
     font-family: 'Lora', serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     background: #ffe6f2;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+* {
+    box-sizing: border-box; /* Include padding in width */
+}
+
 /* Header */
 header {
-    background-color: #ffe6f2;
     padding: 20px;
-    text-align: center;
-    width: 100%;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 nav ul {
@@ -133,6 +134,20 @@ body, h1 {
     background-color: #fff; /* Optional background for contrast */
 }
 
+/* Main Container */
+.container {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Optional: Add padding on sides */
+}
+
+/* About and Contact Containers */
+.about-container,
+.contact-container {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 40px; /* Add padding for spacing */
+}
 .about-image {
     width: 35%; /* Reduce the width of the image container */
 }
