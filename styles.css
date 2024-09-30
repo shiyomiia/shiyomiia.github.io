@@ -38,6 +38,7 @@ nav ul li a {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto;
+    width: 90%;
 }
 
 /* Home Section */
