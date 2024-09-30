@@ -67,7 +67,7 @@ nav ul li a {
 .about-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Ensure image and text are vertically aligned */
+    align-items: flex-start; /* Align items at the top */
     padding: 40px;
     background-color: #ffe6f2;
     gap: 20px;
@@ -102,73 +102,6 @@ nav ul li a {
     text-align: justify;
     color: #333;
     line-height: 1.6;
-}
-
-/* Contact Us Section */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px;
-    background-color: #ffe6f2;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
-}
-
-.contact-info {
-    width: 40%;
-}
-
-.contact-info h2 {
-    color: #0000ff;
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 24px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.contact-form-container {
-    width: 55%;
-}
-
-.contact-form-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form-container label {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.contact-form-container input, 
-.contact-form-container textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact-form-container button {
-    background-color: #F08E80;
-    color: #fff;
-    padding: 12px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form-container button:hover {
-    background-color: #ff7c6a;
 }
 
 /* Footer */
