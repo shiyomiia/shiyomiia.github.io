@@ -13,6 +13,7 @@ header {
     padding: 20px;
     text-align: center;
     width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 nav ul {
@@ -21,6 +22,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Center the menu */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 nav ul li {
@@ -37,155 +39,69 @@ nav ul li a {
 .logo-img {
     width: 150px; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn't exceed the header width */
-    display: block; /* Ensure block display */
-    margin: 0 auto; /* Center the logo */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Home Section */
 .container {
     position: relative;
     text-align: center;
-    height: auto; /* Remove height restriction */
+    height: auto;
 }
 
 .main-image {
-    width: 100%; /* Full width */
-    max-height: 70vh; /* Limit height as needed */
-    object-fit: cover; /* Maintain aspect ratio */
-    display: block; /* Ensure block display */
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    display: block;
 }
 
-.overlay {
-    position: absolute; /* Position overlay on top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 1; /* Behind the text */
+/* Ensure no horizontal overflow for the entire page */
+* {
+    box-sizing: border-box;
 }
 
-/* Centering the welcome text */
-.welcome-text {
-    position: absolute; /* Position text on top of the image */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    font-size: 48px; /* Adjust font size as needed */
-    color: #ffffff; /* White color for text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
-    z-index: 2; /* Above the overlay */
-}
-
-/* Ensure that there is no margin or padding that might affect centering */
-body, h1 {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default paddings */
-}
-
-/* Smooth scrolling animation for Our Services */
-.animated-title {
-    color: #0000ff; /* Set the desired color for the animated title */
-    font-size: 80px;
-    text-align: center;
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow to keep text within bounds */
-    animation: scroll-title 20s linear infinite; /* Continuous scroll */
-    display: inline-block; /* Make it an inline-block for proper positioning */
-}
-
-/* Keyframes for scrolling animation */
-@keyframes scroll-title {
-    0% {
-        transform: translateX(0%); /* Start off-screen to the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to off-screen to the left */
-    }
-}
-
-/* Ensure uniform sizing for service sections */
-.services {
-    display: flex;
-    justify-content: space-around; /* Space items evenly */
-    padding: 20px;
-}
-
-.service {
-    width: 30%; /* Ensure each service takes the same width */
-    padding: 10px; /* Add some padding */
-    text-align: center; /* Center the text */
-    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
-    border-radius: 5px; /* Optional: Add rounded corners */
-}
-
-.service-img {
-    width: 100%; /* Ensure images take full width of the service box */
-    height: 350px; /* Maintain aspect ratio */
-    max-height: 400px; /* Set a maximum height for images */
-}
-
-.service h3 {
-    font-size: 30px; /* Increase the font size of the title */
-    color: #F08E80; /* Use the specified color for titles */
-    text-align: left; /* Align the title to the left */
-    text-decoration: underline; /* Underline the title */
-    margin-bottom: 10px; /* Add some space below the title */
-}
-
-.service p {
-    font-size: 24px; /* Increase font size for the description */
-    color: black; 
-    text-align: justify; /* Justify the text */
-}
-
-/* About Us Section */
 /* About Us Section */
 .about-container {
-    display: flex; /* Create a flexbox container */
-    justify-content: space-between; /* Ensure even spacing */
-    align-items: center; /* Vertically center the items */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
     padding: 40px;
-    background-color: #fff; /* Optional background for contrast */
+    background-color: #fff;
+    gap: 20px;
+    max-width: 1200px; /* Ensure it fits within common screen sizes */
+    margin: 0 auto; /* Center the section */
 }
 
 .about-image {
-    width: 35%; /* Reduce the width of the image container */
+    width: 40%;
 }
 
 .about-image img {
-    width: 100%; /* Ensure the image takes the full width of its container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .about-text {
-    width: 60%; /* Adjust width for the text container */
-    padding-left: 20px; /* Add space between image and text */
+    width: 55%;
 }
 
 .about-text h2 {
-    color: #0000ff; /* Blue color for the title */
-    font-size: 60px; /* Reduce the font size to fit the section better */
-    font-weight: bold; /* Make the text bold for emphasis */
-    text-align: left; /* Align the title to the left */
+    color: #0000ff;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 20px;
 }
 
 .about-text p {
-    font-size: 24px; /* Adjust font size for readability */
-    text-align: justify; /* Justify text for neatness */
+    font-size: 24px;
+    text-align: justify;
     color: #333;
-    line-height: 1.6; /* Improve readability */
-}
-
-/* Contact Us form */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    line-height: 1.6;
 }
 
 /* Footer */
