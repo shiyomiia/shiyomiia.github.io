@@ -1,12 +1,11 @@
-/* Overall site styling */
+/* Body and general layout */
 body {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
-    background-color: #f9e6ff; /* Pastel Pink background */
+    background: #ffe6f2;
 }
 
-/* Header */
 header {
     background-color: white;
     padding: 20px;
@@ -28,21 +27,52 @@ nav ul li a {
     color: #333;
 }
 
-/* Animated Title for "Our Services" */
-.animated-title {
-    font-size: 40px;
-    color: #0000ff; /* Blue for major titles */
+/* Centering logo */
+.logo-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Main container */
+.container {
     text-align: center;
-    margin-bottom: 20px;
-    animation: slide 5s linear infinite;
+    position: relative;
+}
+
+/* Welcome text */
+.welcome-text {
+    font-size: 50px;
+    font-family: 'Lora', serif;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main image */
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Animated title for Our Services */
+.animated-title {
+    color: #df80ff;
+    font-size: 40px;
+    text-align: center;
+    animation: slide 10s linear infinite;
 }
 
 @keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
 }
 
-/* Services Section */
+/* Service section */
 .services {
     display: flex;
     justify-content: space-around;
@@ -51,65 +81,31 @@ nav ul li a {
 
 .service {
     width: 30%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     text-align: center;
 }
 
-.service h3 {
-    color: #ff9999; /* Salmon Pink for small titles */
-    font-size: 30px;
+/* Font colors for services */
+h2 {
+    color: #0000ff;
 }
 
-.service p {
-    text-align: justify;
-    font-size: 18px;
-    color: #333;
+h3 {
+    color: #ff9999;
 }
 
-/* About Us Section */
-#about {
-    padding: 50px 20px;
-    background-color: #f9e6ff; /* Matches overall background */
-}
-
-#about h2 {
-    font-size: 36px;
-    color: #0000ff; /* Blue for major titles */
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.about-text {
-    flex: 1;
-    font-size: 18px;
-    color: #333;
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
+/* About Us */
 .about-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Form Styles */
+p {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Contact Us Form */
 form {
     display: flex;
     flex-direction: column;
@@ -146,7 +142,4 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f8f8f8;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
