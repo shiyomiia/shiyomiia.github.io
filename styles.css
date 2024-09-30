@@ -103,6 +103,7 @@ h3 {
 
 /* About Us image */
 .about-img {
+    color: #0000ff;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
