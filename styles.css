@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 h2, h3 {
-    color: #9b59b6; /* Added missing semicolon */
+    color: purple;
     text-align: center;
     font-family: Times New Roman, Times, serif;
 }
