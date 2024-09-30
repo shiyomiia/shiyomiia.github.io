@@ -22,7 +22,6 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; /* Center the menu */
-    box-sizing: border-box; /* Prevent overflow */
 }
 
 nav ul li {
@@ -58,18 +57,13 @@ nav ul li a {
     display: block;
 }
 
-/* Ensure no horizontal overflow for the entire page */
-* {
-    box-sizing: border-box;
-}
-
 /* About Us Section */
 .about-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items at the top */
     padding: 40px;
-    background-color: #fff;
+    background-color: #ffe6f2;
     gap: 20px;
     max-width: 1200px; /* Ensure it fits within common screen sizes */
     margin: 0 auto; /* Center the section */
@@ -102,6 +96,97 @@ nav ul li a {
     text-align: justify;
     color: #333;
     line-height: 1.6;
+}
+
+/* Our Services Section */
+.services {
+    display: flex;
+    justify-content: space-around; /* Adjusted for better distribution */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 40px;
+}
+
+.service {
+    width: 30%; /* Adjust width for a better layout */
+    text-align: center; /* Center align text */
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+h3 {
+    font-size: 24px; /* Adjust font size */
+    margin-top: 10px;
+}
+
+/* Contact Us Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 40px;
+    background-color: #ffe6f2;
+    gap: 20px;
+    max-width: 1200px; /* Ensure it fits within common screen sizes */
+    margin: 0 auto; /* Center the section */
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 {
+    color: #0000ff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-form-container {
+    width: 55%;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form-container button {
+    background-color: #F08E80;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #ff7c6a;
 }
 
 /* Footer */
