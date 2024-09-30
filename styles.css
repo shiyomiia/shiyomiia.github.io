@@ -7,37 +7,70 @@ body {
 }
 
 /* Header */
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Bold text for better visibility */
+}
+
+/* Logo size */
 .logo-img {
-    width: 150px; /* Adjusted size */
+    width: 150px; /* Adjusted to a more proportionate size */
     height: 100px;
     display: block;
     margin: 0 auto;
 }
 
-/* Welcome text */
-.welcome-text {
-    font-size: 30px;
-    color: #0000ff;
+/* Home Section */
+.container {
     position: relative;
     text-align: center;
-    margin: 20px 0;
 }
 
-/* Main image */
 .main-image {
     width: 100%;
     height: auto;
 }
 
+/* Welcome text inside the image */
+.welcome-text {
+    position: absolute;
+    top: 20%; /* Adjust positioning as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0000ff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 /* Smooth scrolling animation for Our Services */
 .animated-title {
     color: #0000ff;
-    font-size: 60px;
+    font-size: 28px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    animation: scroll-title 15s linear infinite;
+    animation: scroll-title 10s linear infinite;
 }
 
 /* Keyframes for scrolling animation */
@@ -64,7 +97,7 @@ body {
 
 /* Font colors for service titles */
 h3 {
-    color: #ff9999;
+    color: #ff9999; /* Salmon pink for service titles */
 }
 
 /* About Us image */
