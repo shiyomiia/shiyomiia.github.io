@@ -10,9 +10,9 @@ header {
     padding: 20px;
     text-align: center;
     display: block;
-  margin-left: auto;
-  margin-right: auto;  
-  width: 50%;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 50%;
 }
 
 nav ul {
@@ -113,7 +113,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.center {
+.centerid {
   display: block;
   margin-left: auto;
   margin-right: auto;  
