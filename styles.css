@@ -47,19 +47,20 @@ nav ul li a {
 }
 
 .main-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Full width */
+    max-height: 70vh; /* Limit height */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
-/* Welcome text inside the image */
 .welcome-text {
-    position: absolute; /* Set absolute positioning */
+    position: absolute; /* Overlay text */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    font-size: 48px; /* Adjust font size as needed */
-    color: #0000ff; /* Change text color for visibility */
-    z-index: 1; /* Ensure it is on top of the image */
+    transform: translate(-50%, -50%); /* Adjust position */
+    font-size: 48px; /* Font size */
+    color: #ffffff; /* White color for text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+    z-index: 1; /* Above the image */
 }
 
 /* Smooth scrolling animation for Our Services */
