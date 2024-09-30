@@ -87,6 +87,7 @@ body, h1 {
 }
 
 /* Smooth scrolling animation for Our Services */
+/* Smooth scrolling animation for Our Services */
 .animated-title {
     color: #0000ff; /* Set the desired color for the animated title */
     font-size: 80px;
@@ -95,18 +96,22 @@ body, h1 {
     overflow: hidden; /* Hide overflow to keep text within bounds */
     animation: scroll-title 20s linear infinite; /* Continuous scroll */
     display: inline-block; /* Make it an inline-block for proper positioning */
-    position: relative; /* Add relative positioning */
-    left: 100%; /* Start off-screen to the right */
 }
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-title {
     0% {
-        transform: translateX(0%); /* Start from the initial position */
+        transform: translateX(0); /* Start at the initial position */
     }
     100% {
-        transform: translateX(100%); /* Move left to completely off-screen */
+        transform: translateX(-100%); /* Move left to completely out of view */
     }
+}
+
+/* Container for the scrolling title to ensure it's always visible */
+.scrolling-container {
+    overflow: hidden; /* Hide overflow for the scrolling effect */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Ensure uniform sizing for service sections */
@@ -144,7 +149,6 @@ body, h1 {
     text-align: justify; /* Justify the text */
 }
 
-/* About Us Section */
 /* About Us Section */
 .about-container {
     display: flex; /* Create a flexbox container */
