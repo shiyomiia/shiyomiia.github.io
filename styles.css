@@ -1,10 +1,11 @@
+
 /* General styles */
 body {
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
     background: #ffe6f2;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header */
@@ -12,6 +13,7 @@ header {
     background-color: #ffe6f2;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 nav ul {
@@ -19,7 +21,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the menu */
 }
 
 nav ul li {
@@ -29,126 +31,162 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: bold; /* Bold text for better visibility */
 }
 
 /* Logo size */
 .logo-img {
-    width: 150px;
-    height: auto;
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the header width */
+    display: block; /* Ensure block display */
+    margin: 0 auto; /* Center the logo */
 }
 
 /* Home Section */
 .container {
     position: relative;
     text-align: center;
+    height: auto; /* Remove height restriction */
 }
 
 .main-image {
-    width: 100%;
-    max-height: 70vh;
-    object-fit: cover;
+    width: 100%; /* Full width */
+    max-height: 70vh; /* Limit height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    display: block; /* Ensure block display */
 }
 
-/* About Us Section */
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px;
-    background-color: #ffe6f2;
-    max-width: 1200px;
-    margin: 0 auto;
+.overlay {
+    position: absolute; /* Position overlay on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Behind the text */
 }
 
-.about-image {
-    width: 40%;
+/* Centering the welcome text */
+.welcome-text {
+    position: absolute; /* Position text on top of the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    font-size: 48px; /* Adjust font size as needed */
+    color: #ffffff; /* White color for text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+    z-index: 2; /* Above the overlay */
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
+/* Ensure that there is no margin or padding that might affect centering */
+body, h1 {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default paddings */
 }
 
-.about-text {
-    width: 55%;
+/* Smooth scrolling animation for Our Services */
+.animated-title {
+    color: #0000ff; /* Set the desired color for the animated title */
+    font-size: 80px;
+    text-align: center;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow to keep text within bounds */
+    animation: scroll-title 20s linear infinite; /* Continuous scroll */
+    display: inline-block; /* Make it an inline-block for proper positioning */
 }
 
-.about-text h2 {
-    color: #0000ff;
-    font-size: 60px;
-    font-weight: bold;
+/* Keyframes for scrolling animation */
+@keyframes scroll-title {
+    0% {
+        transform: translateX(0%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to off-screen to the left */
+    }
 }
 
-.about-text p {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Our Services Section */
+/* Ensure uniform sizing for service sections */
 .services {
     display: flex;
-    justify-content: space-around;
-    padding: 40px;
+    justify-content: space-around; /* Space items evenly */
+    padding: 20px;
 }
 
 .service {
-    width: 30%;
-    text-align: center;
+    width: 30%; /* Ensure each service takes the same width */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center the text */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .service-img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /* Ensure images take full width of the service box */
+    height: 350px; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height for images */
 }
 
-/* Contact Us Section */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
+.service h3 {
+    font-size: 30px; /* Increase the font size of the title */
+    color: #F08E80; /* Use the specified color for titles */
+    text-align: left; /* Align the title to the left */
+    text-decoration: underline; /* Underline the title */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.service p {
+    font-size: 24px; /* Increase font size for the description */
+    color: black; 
+    text-align: justify; /* Justify the text */
+}
+
+/* About Us Section */
+/* About Us Section */
+.about-container {
+    display: flex; /* Create a flexbox container */
+    justify-content: space-between; /* Ensure even spacing */
+    align-items: center; /* Vertically center the items */
     padding: 40px;
-    background-color: #ffe6f2;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #fff; /* Optional background for contrast */
 }
 
-.contact-info {
-    width: 40%;
+.about-image {
+    width: 35%; /* Reduce the width of the image container */
 }
 
-.contact-info h2 {
-    color: #0000ff;
-    font-size: 60px;
+.about-image img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-.contact-form-container {
-    width: 55%;
+.about-text {
+    width: 60%; /* Adjust width for the text container */
+    padding-left: 20px; /* Add space between image and text */
 }
 
-.contact-form-container form {
+.about-text h2 {
+    color: #0000ff; /* Blue color for the title */
+    font-size: 60px; /* Reduce the font size to fit the section better */
+    font-weight: bold; /* Make the text bold for emphasis */
+    text-align: left; /* Align the title to the left */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 24px; /* Adjust font size for readability */
+    text-align: justify; /* Justify text for neatness */
+    color: #333;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Contact Us form */
+form {
     display: flex;
     flex-direction: column;
-}
-
-.contact-form-container input, 
-.contact-form-container textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact-form-container button {
-    background-color: #F08E80;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form-container button:hover {
-    background-color: #ff7c6a;
+    max-width: 400px;
+    margin: auto;
 }
 
 /* Footer */
@@ -156,4 +194,5 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f8f8f8;
+    font-size: 12px;
 }
