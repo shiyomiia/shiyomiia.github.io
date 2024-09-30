@@ -64,6 +64,7 @@ nav ul li a {
     z-index: 1; /* Behind the text */
 }
 
+/* Centering the welcome text */
 .welcome-text {
     position: absolute; /* Position text on top of the image */
     top: 50%; /* Center vertically */
@@ -100,7 +101,6 @@ body, h1 {
         transform: translateX(-100%); /* Move to off-screen to the left */
     }
 }
-
 
 /* Ensure uniform sizing for service sections */
 .services {
@@ -140,7 +140,7 @@ body, h1 {
 /* About Us image */
 .about-img {
     width: 100%; /* Ensure image is full width */
-    height: 100%; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px;
 }
 
