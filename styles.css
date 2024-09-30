@@ -53,14 +53,24 @@ nav ul li a {
 }
 
 /* Welcome text inside the image */
+.container {
+    position: relative; /* Set relative positioning */
+    text-align: center; /* Center text */
+}
+
 .welcome-text {
-    position: absolute;
-    top: 20%; /* Adjust positioning as needed */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #0000ff;
-    font-size: 40px;
-    font-weight: bold;
+    position: absolute; /* Set absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    font-size: 48px; /* Adjust font size as needed */
+    color: white; /* Change text color for visibility */
+    z-index: 1; /* Ensure it is on top of the image */
+}
+
+img {
+    width: 100%; /* Ensure the image is full width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Smooth scrolling animation for Our Services */
