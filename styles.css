@@ -8,7 +8,7 @@ body {
 
 /* Header */
 header {
-    background-color: white;
+    background-color: #ffe6f2;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -34,7 +34,7 @@ nav ul li a {
 
 /* Logo size */
 .logo-img {
-    width: 170px; /* Adjusted to a more proportionate size */
+    width: 200px; /* Adjusted to a more proportionate size */
     height: 100px;
     display: block;
     margin: 0 auto;
