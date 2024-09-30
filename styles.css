@@ -83,22 +83,38 @@ nav ul li a {
     }
 }
 
-/* Service section */
+/* Ensure uniform sizing for service sections */
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Space items evenly */
     padding: 20px;
 }
 
 .service {
-    width: 30%;
-    text-align: center;
+    width: 30%; /* Ensure each service takes the same width */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center the text */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
-/* Font colors for service titles */
-h3 {
-    color: #ff9999; /* Salmon pink for service titles */
+.service img {
+    width: 100%; /* Ensure images take full width of the service box */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for images */
 }
+
+.service h3 {
+    font-size: 24px; /* Increase the font size of the title */
+    color: #df80ff; /* Use the specified color for titles */
+}
+
+.service p {
+    font-size: 18px; /* Increase font size for the description */
+    color: #df80ff; /* Use the same color for description text */
+    text-align: justify; /* Justify the text */
+}
+
 
 /* About Us image */
 .about-img {
