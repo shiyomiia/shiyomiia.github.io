@@ -1,3 +1,5 @@
+
+
 /* General styles */
 body {
     font-family: 'Lora', serif;
@@ -75,6 +77,7 @@ nav ul li a {
     font-size: 48px; /* Adjust font size as needed */
     color: #ffffff; /* White color for text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+    z-index: 2; /* Above the overlay */
 }
 
 /* Ensure that there is no margin or padding that might affect centering */
@@ -85,42 +88,61 @@ body, h1 {
 
 /* Smooth scrolling animation for Our Services */
 .animated-title {
-    color: #0000ff;
-    font-size: 60px;
+    color: #0000ff; /* Set the desired color for the animated title */
+    font-size: 80px;
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap; /* Prevent text from wrapping */
-    animation: scroll-title 20s linear infinite;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow to keep text within bounds */
+    animation: scroll-title 20s linear infinite; /* Continuous scroll */
+    display: inline-block; /* Make it an inline-block for proper positioning */
 }
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-title {
     0% {
-        transform: translateX(100%); /* Start off-screen to the right */
+        transform: translateX(0%); /* Start off-screen to the right */
     }
     100% {
-        transform: translateX(-100%); /* Move to off-screen to the left */
+        transform: translateX(100%); /* Move to off-screen to the left */
     }
 }
 
-/* Our Services Section */
+/* Ensure uniform sizing for service sections */
 .services {
-    display: flex; /* Use flexbox for horizontal alignment */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    padding: 40px;
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    padding: 20px;
 }
 
 .service {
-    min-width: 300px; /* Set a minimum width for each service card */
-    flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
-    text-align: center;
+    width: 30%; /* Ensure each service takes the same width */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center the text */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .service-img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /* Ensure images take full width of the service box */
+    height: 350px; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height for images */
 }
 
+.service h3 {
+    font-size: 30px; /* Increase the font size of the title */
+    color: #F08E80; /* Use the specified color for titles */
+    text-align: left; /* Align the title to the left */
+    text-decoration: underline; /* Underline the title */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.service p {
+    font-size: 24px; /* Increase font size for the description */
+    color: black; 
+    text-align: justify; /* Justify the text */
+}
+
+/* About Us Section */
 /* About Us Section */
 .about-container {
     display: flex; /* Create a flexbox container */
@@ -160,75 +182,18 @@ body, h1 {
     line-height: 1.6; /* Improve readability */
 }
 
-/* Contact Us Section */
-.contact-container {
+/* Contact Us form */
+form {
     display: flex;
-    justify-content: space-between; /* Space items evenly */
-    padding: 40px;
-    background-color: #ffe6f2; /* Background color for the section */
-    gap: 20px; /* Space between elements */
-    max-width: 1200px; /* Max width for the section */
-    margin: 0 auto; /* Center the section */
-}
-
-.contact-info {
-    width: 40%; /* Adjust the width of the contact info section */
-}
-
-.contact-info h2 {
-    color: #0000ff; /* Blue color for the title */
-    font-size: 60px; /* Font size for the title */
-    margin-bottom: 20px; /* Space below the title */
-}
-
-.contact-info p {
-    font-size: 24px; /* Font size for the paragraph */
-    line-height: 1.6; /* Line height for readability */
-    color: #333; /* Text color */
-}
-
-.contact-form-container {
-    width: 55%; /* Adjust width for the form container */
-}
-
-.contact-form-container form {
-    display: flex;
-    flex-direction: column; /* Stack form elements */
-}
-
-.contact-form-container label {
-    font-size: 18px; /* Font size for labels */
-    margin-bottom: 10px; /* Space below labels */
-}
-
-.contact-form-container input, 
-.contact-form-container textarea {
-    padding: 10px; /* Padding for input fields */
-    margin-bottom: 20px; /* Space below input fields */
-    font-size: 16px; /* Font size for input fields */
-    border: 1px solid #ccc; /* Border styling */
-    border-radius: 5px; /* Rounded corners */
-    width: 100%; /* Full width */
-}
-
-.contact-form-container button {
-    background-color: #F08E80; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 12px; /* Button padding */
-    font-size: 18px; /* Button font size */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-.contact-form-container button:hover {
-    background-color: #ff7c6a; /* Change background color on hover */
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
 }
 
 /* Footer */
 footer {
-    text-align: center; /* Center the footer text */
-    padding: 10px; /* Padding for footer */
-    background-color: #f8f8f8; /* Footer background color */
-    font-size: 12px; /* Footer font size */
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    font-size: 12px;
 }
