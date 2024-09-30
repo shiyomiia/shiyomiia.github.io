@@ -1,5 +1,5 @@
 body {
-    font-family: The Seasons, sans-serif;
+    font-family: Times New Roman, Times, serif;
     margin: 0;
     padding: 0;
     background: #f8f8f8;
@@ -9,10 +9,6 @@ header {
     background-color: #f8f8f8;
     padding: 20px;
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    width: 50%;
 }
 
 nav ul {
@@ -35,13 +31,10 @@ nav ul li a {
     height: auto;
 }
 
-h1 {
-    text-align: center;
-}
-
 h2, h3 {
     color: #9b59b6
     text-align: center;
+    font-family: Times New Roman, Times, serif;
 }
 
 .services {
@@ -100,7 +93,7 @@ footer {
 
 .container {
   font-size: 50px;  
-  font-family: The Seasons, sans-serif;  
+  font-family: Times New Roman, Times, serif;
   position: relative;
   text-align: center;
   color: black;
@@ -111,11 +104,4 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.centerid {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
-  width: 50%;
 }
