@@ -31,8 +31,13 @@ nav ul li a {
     height: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
 h2, h3 {
-    color: #9b59b6;
+    color: #9b59b6
+    text-align: center;
 }
 
 .services {
