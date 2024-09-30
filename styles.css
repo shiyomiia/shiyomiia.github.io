@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #ffe6f2;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -12,8 +12,6 @@ header {
     background-color: #ffe6f2;
     padding: 20px;
     text-align: center;
-    width: 100%;
-    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 nav ul {
@@ -21,7 +19,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center the menu */
+    justify-content: center;
 }
 
 nav ul li {
@@ -31,42 +29,36 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold; /* Bold text for better visibility */
+    font-weight: bold;
 }
 
 /* Logo size */
 .logo-img {
-    width: 150px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+    width: 150px;
+    height: auto;
 }
 
 /* Home Section */
 .container {
     position: relative;
     text-align: center;
-    height: auto;
 }
 
 .main-image {
     width: 100%;
     max-height: 70vh;
     object-fit: cover;
-    display: block;
 }
 
 /* About Us Section */
 .about-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     padding: 40px;
     background-color: #ffe6f2;
-    gap: 20px;
-    max-width: 1200px; /* Ensure it fits within common screen sizes */
-    margin: 0 auto; /* Center the section */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-image {
@@ -75,7 +67,6 @@ nav ul li a {
 
 .about-image img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
@@ -87,51 +78,38 @@ nav ul li a {
     color: #0000ff;
     font-size: 60px;
     font-weight: bold;
-    text-align: left;
-    margin-bottom: 20px;
 }
 
 .about-text p {
     font-size: 24px;
-    text-align: justify;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Our Services Section */
 .services {
     display: flex;
-    justify-content: space-around; /* Adjusted for better distribution */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-around;
     padding: 40px;
 }
 
 .service {
-    width: 30%; /* Adjust width for a better layout */
-    text-align: center; /* Center align text */
+    width: 30%;
+    text-align: center;
 }
 
 .service-img {
     width: 100%;
-    height: auto;
-    border-radius: 8px; /* Add rounded corners to images */
-}
-
-h3 {
-    font-size: 24px; /* Adjust font size */
-    margin-top: 10px;
+    border-radius: 8px;
 }
 
 /* Contact Us Section */
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
     padding: 40px;
     background-color: #ffe6f2;
-    gap: 20px;
-    max-width: 1200px; /* Ensure it fits within common screen sizes */
-    margin: 0 auto; /* Center the section */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-info {
@@ -141,14 +119,6 @@ h3 {
 .contact-info h2 {
     color: #0000ff;
     font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 24px;
-    line-height: 1.6;
-    color: #333;
 }
 
 .contact-form-container {
@@ -160,16 +130,10 @@ h3 {
     flex-direction: column;
 }
 
-.contact-form-container label {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
 .contact-form-container input, 
 .contact-form-container textarea {
     padding: 10px;
     margin-bottom: 20px;
-    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
@@ -179,10 +143,8 @@ h3 {
     background-color: #F08E80;
     color: #fff;
     padding: 12px;
-    font-size: 18px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .contact-form-container button:hover {
@@ -194,5 +156,4 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f8f8f8;
-    font-size: 12px;
 }
