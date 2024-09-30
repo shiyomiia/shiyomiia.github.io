@@ -50,16 +50,20 @@
                     <h3>Creative Writing</h3>
                     <p>We transform ideas into compelling narratives. Our creative writing services encompass captivating copywriting, engaging articles, and persuasive marketing content. With an emphasis on tone and audience, we craft messages that inspire, connect, and drive action, capturing the essence of your vision.</p>
                 </div>
-            </div
-            <section id="about">
-    <h2 style="color: blue; text-align: center;">About Us</h2> <!-- Title styled -->
-    <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
-        <img src="about-us-image.jpg" alt="About Us" class="about-img" style="flex: 1; max-width: 300px; margin-right: 20px;"> <!-- Image column -->
-        <div style="flex: 2; text-align: left;">
-            <p>At Word Triangle, we are a dedicated team of language enthusiasts and creative thinkers. Our mission is to bridge cultures and ideas through the power of words.</p> <!-- Text column -->
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <div id="about-content">
+                <img src="about-us-image.jpg" alt="About Us" class="about-img">
+                <div class="about-text">
+                    <h2 style="text-align: center; color: blue;">About Us</h2>
+                    <p>At Word Triangle, we are a dedicated team of language enthusiasts and creative thinkers. Our mission is to bridge cultures and ideas through the power of words.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Us Section -->
         <section id="contact">
             <h2>Contact Us</h2>
@@ -67,14 +71,18 @@
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Word Triangle</p>
     </footer>
