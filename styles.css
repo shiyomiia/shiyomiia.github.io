@@ -44,13 +44,14 @@ nav ul li a {
 .container {
     position: relative;
     text-align: center;
-    height: 100vh; /* Full height of the viewport */
+    height: auto; /* Remove height restriction */
 }
 
 .main-image {
     width: 100%; /* Full width */
-    max-height: 70vh; /* Limit height */
+    max-height: 70vh; /* Limit height as needed */
     object-fit: cover; /* Maintain aspect ratio */
+    display: block; /* Ensure block display */
 }
 
 .overlay {
@@ -60,36 +61,24 @@ nav ul li a {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 0; /* Behind the text */
+    z-index: 1; /* Behind the text */
 }
 
 .welcome-text {
-    position: absolute; /* Position text on top of the overlay */
+    position: absolute; /* Position text on top of the image */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to truly center */
     font-size: 48px; /* Adjust font size as needed */
     color: #ffffff; /* White color for text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
-    z-index: 1; /* Above the image and overlay */
+    z-index: 2; /* Above the overlay */
 }
 
-
-.main-image {
-    width: 90%; /* Full width */
-    max-height: 70vh; /* Limit height */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-.welcome-text {
-    position: absolute; /* Overlay text */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to truly center */
-    font-size: 48px; /* Adjust font size as needed */
-    color: white; /* White color for text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
-    z-index: 1; /* Above the image and overlay */
+/* Ensure that there is no margin or padding that might affect centering */
+body, h1 {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default paddings */
 }
 
 /* Smooth scrolling animation for Our Services */
