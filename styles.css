@@ -117,7 +117,7 @@ nav ul li a {
 /* About Us image */
 .about-img {
     width: 100%; /* Ensure image is full width */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
     margin-bottom: 20px;
 }
 
