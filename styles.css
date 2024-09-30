@@ -141,50 +141,41 @@ body, h1 {
 }
 
 /* About Us Section */
-#about {
-    padding: 50px 20px;
-    background-color: #ffe6f2; /* Background color to match your site */
-    text-align: center; /* Center the text */
-}
-
-#about h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center; /* Ensure the heading is centered */
-}
-
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-text {
-    flex: 1;
-    padding: 20px;
-    max-width: 600px; /* Ensure the text doesn't get too wide */
-    text-align: left; /* Align the text to the left */
-}
-
-.about-text p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.about-container {
+    display: flex; /* Create a flexbox container */
+    justify-content: space-between; /* Ensure even spacing */
+    align-items: center; /* Vertically center the items */
+    padding: 40px;
+    background-color: #fff; /* Optional background for contrast */
 }
 
 .about-image {
-    flex: 1;
-    text-align: center;
+    width: 45%; /* Left column for the image */
 }
 
-.about-img {
-    width: 100%;
-    max-width: 500px; /* Control the image size */
-    height: auto;
-    border-radius: 10px; /* Optional: Rounded corners for a sleek look */
+.about-image img {
+    width: 100%; /* Make the image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.about-text {
+    width: 50%; /* Right column for the text */
+    padding-left: 20px; /* Space between the image and text */
+}
+
+.about-text h2 {
+    color: #0000ff; /* Blue title color, same as 'Our Services' */
+    font-size: 80px; /* Same font size as 'Our Services' */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 24px; /* Adjust font size for readability */
+    text-align: justify; /* Justify text for neatness */
+    color: #333;
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Contact Us form */
