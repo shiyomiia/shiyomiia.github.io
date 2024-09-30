@@ -99,10 +99,10 @@ body, h1 {
 /* Keyframes for scrolling animation */
 @keyframes scroll-title {
     0% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Start off-screen to the right */
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Move to off-screen to the left */
     }
 }
 
