@@ -58,7 +58,7 @@ nav ul li a {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to truly center */
     font-size: 48px; /* Adjust font size as needed */
-    color: white; /* Change text color for visibility */
+    color: #0000ff; /* Change text color for visibility */
     z-index: 1; /* Ensure it is on top of the image */
 }
 
@@ -69,7 +69,7 @@ nav ul li a {
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-    animation: scroll-title 20s linear infinite;
+    animation: scroll-title 20s linear finite;
 }
 
 /* Keyframes for scrolling animation */
