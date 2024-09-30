@@ -95,15 +95,17 @@ body, h1 {
     overflow: hidden; /* Hide overflow to keep text within bounds */
     animation: scroll-title 20s linear infinite; /* Continuous scroll */
     display: inline-block; /* Make it an inline-block for proper positioning */
+    position: relative; /* Add relative positioning */
+    left: 100%; /* Start off-screen to the right */
 }
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-title {
     0% {
-        transform: translateX(0%); /* Start off-screen to the right */
+        transform: translateX(0); /* Start from the initial position */
     }
     100% {
-        transform: translateX(100%); /* Move to off-screen to the left */
+        transform: translateX(-100%); /* Move left to completely off-screen */
     }
 }
 
