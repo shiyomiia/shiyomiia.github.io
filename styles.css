@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 .main-image {
-    width: 80%; /* Full width */
+    width: 90%; /* Full width */
     max-height: 70vh; /* Limit height */
     object-fit: cover; /* Maintain aspect ratio */
 }
