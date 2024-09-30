@@ -144,9 +144,9 @@ body, h1 {
 .about-container {
     display: flex; /* Create a flexbox container */
     justify-content: space-between; /* Space between the image and text */
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Align both image and text vertically in the middle */
     padding: 40px;
-    background-color: #ffe6f2; /* Optional: background color for contrast */
+    background-color: #fff; /* Optional: background color for contrast */
     gap: 20px; /* Space between image and text */
 }
 
