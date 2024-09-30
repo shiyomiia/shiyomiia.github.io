@@ -44,14 +44,11 @@ nav ul li a {
 .container {
     position: relative;
     text-align: center;
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
     height: 100vh; /* Full height of the viewport */
 }
 
 .main-image {
-    width: 90%; /* Full width */
+    width: 100%; /* Full width */
     max-height: 70vh; /* Limit height */
     object-fit: cover; /* Maintain aspect ratio */
 }
@@ -67,7 +64,10 @@ nav ul li a {
 }
 
 .welcome-text {
-    position: relative; /* Change to relative for proper centering */
+    position: absolute; /* Position text on top of the overlay */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
     font-size: 48px; /* Adjust font size as needed */
     color: #ffffff; /* White color for text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
