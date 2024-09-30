@@ -67,20 +67,21 @@ nav ul li a {
     color: #0000ff; /* Set the desired color for the animated title */
     font-size: 60px;
     text-align: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    animation: scroll-title 20s linear finite;
+    overflow: hidden; /* Hide overflow to keep text within bounds */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: scroll-title 20s linear infinite; /* Continuous scroll */
 }
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-title {
     0% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Start off-screen to the right */
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Move to off-screen to the left */
     }
 }
+
 
 /* Ensure uniform sizing for service sections */
 .services {
