@@ -5,11 +5,7 @@ body {
     padding: 0;
     background: #ffe6f2;
     overflow: hidden; /* Hide scrollbar */
-}
-
-/* Add this to ensure the body takes full height */
-html {
-    height: 200%; /* Ensure the body takes full height */
+    overflow-x: hidden; /* Hide scrollbar */
 }
 
 /* Header */
