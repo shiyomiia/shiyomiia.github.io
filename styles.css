@@ -1,21 +1,20 @@
+
+
 /* General styles */
 body {
     font-family: 'Lora', serif;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
     background: #ffe6f2;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-* {
-    box-sizing: border-box; /* Include padding in width */
-}
-
 /* Header */
 header {
+    background-color: #ffe6f2;
     padding: 20px;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Include padding in width */
+    text-align: center;
+    width: 100%;
 }
 
 nav ul {
