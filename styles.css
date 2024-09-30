@@ -105,8 +105,8 @@ nav ul li a {
 }
 
 .service h3 {
-    font-size: 24px; /* Increase the font size of the title */
-    color: #df80ff; /* Use the specified color for titles */
+    font-size: 30px; /* Increase the font size of the title */
+    color: #F08E80; /* Use the specified color for titles */
     text-align: left; /* Align the title to the left */
     text-decoration: underline; /* Underline the title */
     margin-bottom: 10px; /* Add some space below the title */
@@ -114,7 +114,7 @@ nav ul li a {
 
 .service p {
     font-size: 24px; /* Increase font size for the description */
-    color: #df80ff; /* Use the same color for description text */
+    color: black; 
     text-align: justify; /* Justify the text */
 }
 
