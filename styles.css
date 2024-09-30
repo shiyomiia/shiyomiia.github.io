@@ -35,9 +35,10 @@ nav ul li a {
 }
 
 h2, h3 {
-    color: #9b59b6;
+    color: #df80ff;
     text-align: center;
     font-family: 'Lora', serif;
+    margin-bottom: 20px;
 }
 
 .services {
