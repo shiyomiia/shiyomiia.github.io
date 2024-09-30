@@ -46,6 +46,16 @@ nav ul li a {
     text-align: center;
 }
 
+.overlay {
+    position: absolute; /* Position overlay on top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 0; /* Behind the text */
+}
+
 .main-image {
     width: 80%; /* Full width */
     max-height: 60vh; /* Limit height */
@@ -56,11 +66,11 @@ nav ul li a {
     position: absolute; /* Overlay text */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position */
-    font-size: 48px; /* Font size */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+    font-size: 48px; /* Adjust font size as needed */
     color: #ffffff; /* White color for text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
-    z-index: 1; /* Above the image */
+    z-index: 1; /* Above the image and overlay */
 }
 
 /* Smooth scrolling animation for Our Services */
