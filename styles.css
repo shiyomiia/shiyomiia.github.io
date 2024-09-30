@@ -4,8 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #ffe6f2;
-    overflow: hidden; /* Hide scrollbar */
-    overflow-x: hidden; /* Hide scrollbar */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header */
@@ -148,16 +147,10 @@ body, h1 {
     padding: 20px;
 }
 
-/* About Us image */
 .about-img {
-    width: 100%; /* Ensure image is full width within its column */
+    width: 50%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px;
-}
-
-/* About Us section */
-#about {
-    padding: 20px;
+    margin-right: 20px; /* Space between image and text */
 }
 
 .about-text {
