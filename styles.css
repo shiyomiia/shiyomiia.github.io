@@ -65,7 +65,7 @@ nav ul li a {
 /* Smooth scrolling animation for Our Services */
 .animated-title {
     color: #0000ff; /* Set the desired color for the animated title */
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
     overflow: hidden; /* Hide overflow to keep text within bounds */
     white-space: nowrap; /* Prevent wrapping */
@@ -105,12 +105,12 @@ nav ul li a {
 }
 
 .service h3 {
-    font-size: 24px; /* Increase the font size of the title */
+    font-size: 50px; /* Increase the font size of the title */
     color: #df80ff; /* Use the specified color for titles */
 }
 
 .service p {
-    font-size: 18px; /* Increase font size for the description */
+    font-size: 24px; /* Increase font size for the description */
     color: #df80ff; /* Use the same color for description text */
     text-align: justify; /* Justify the text */
 }
