@@ -1,4 +1,4 @@
-/* Body and general layout */
+/* General styles */
 body {
     font-family: 'Lora', serif;
     margin: 0;
@@ -7,53 +7,20 @@ body {
 }
 
 /* Header */
-header {
-    background-color: white;
-    padding: 10px; /* Reduced padding */
-    text-align: center;
-}
-
-/* Logo size adjustment */
 .logo-img {
-    width: 80px; /* Reduced size */
+    width: 80px; /* Adjusted size */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0; /* Reduced margins */
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px; /* Smaller spacing between nav items */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px; /* Smaller font for nav links */
-}
-
-/* Main container */
-.container {
-    text-align: center;
-    position: relative;
-}
-
 /* Welcome text */
 .welcome-text {
-    font-size: 30px; /* Reduced font size */
-    font-family: 'Lora', serif;
+    font-size: 30px;
     color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Main image */
@@ -62,19 +29,25 @@ nav ul li a {
     height: auto;
 }
 
-/* Animated title for Our Services */
+/* Smooth scrolling animation for Our Services */
 .animated-title {
-    color: #df80ff;
-    font-size: 28px; /* Reduced size */
+    color: #0000ff;
+    font-size: 28px;
     text-align: center;
-    animation: slide 10s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: scroll-title 10s linear infinite;
 }
 
-/* Animation for sliding title */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(100px); }
-    100% { transform: translateX(0); }
+/* Keyframes for scrolling animation */
+@keyframes scroll-title {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Service section */
@@ -89,29 +62,19 @@ nav ul li a {
     text-align: center;
 }
 
-/* Font colors for services */
-h2 {
-    color: #0000ff;
-}
-
+/* Font colors for service titles */
 h3 {
     color: #ff9999;
 }
 
-/* About Us */
+/* About Us image */
 .about-img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-p {
-    text-align: justify;
-    padding: 0 20px;
-    font-size: 14px; /* Reduced paragraph font size */
-}
-
-/* Contact Us Form */
+/* Contact Us form */
 form {
     display: flex;
     flex-direction: column;
@@ -119,36 +82,10 @@ form {
     margin: auto;
 }
 
-label {
-    margin: 10px 0 5px;
-    font-size: 14px; /* Smaller labels */
-}
-
-input, textarea {
-    padding: 8px; /* Reduced padding */
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px; /* Reduced input and textarea font size */
-}
-
-button {
-    padding: 8px;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #4cae4c;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f8f8f8;
-    font-size: 12px; /* Smaller footer text */
+    font-size: 12px;
 }
